@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background: white;
+  width: 75vw;
+  position: absolute;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ethValue {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
