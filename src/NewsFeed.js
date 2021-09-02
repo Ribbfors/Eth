@@ -17,7 +17,7 @@ function NewsFeed() {
       baseURL: "https://newsapi.org/v2/everything",
       method: "get",
       headers: {
-        "X-Api-Key": "443e1a16066942518bc1e5cff0cca6f4",
+        "X-Api-Key": process.env.REACT_APP_API_KEY_NEWS,
       },
 
       params: {
