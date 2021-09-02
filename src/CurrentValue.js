@@ -8,13 +8,13 @@ function Value() {
     price: null,
   });
 
-  const endpoint = `/cryptocurrency/quotes/latest`;
+  const endpoint = `/v1/cryptocurrency/quotes/latest`;
   const API_KEY = process.env.REACT_APP_API_KEY_CRYPTO;
 
   useEffect(() => {
     Axios.get(`${endpoint}`, {
       headers: {
-        "X-CMC_PRO_API_KEY": API_KEY,
+        "X-CMC_PRO_API_KEY": REACT_APP_API_KEY_CRYPTO,
         Accept: "application / json",
       },
       params: {
