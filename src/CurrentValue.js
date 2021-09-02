@@ -8,7 +8,7 @@ function Value() {
     price: null,
   });
 
-  const endpoint = `/v1/cryptocurrency/quotes/latest`;
+  const endpoint = `/cryptocurrency/quotes/latest`;
   const API_KEY = process.env.REACT_APP_API_KEY_CRYPTO;
 
   useEffect(() => {
