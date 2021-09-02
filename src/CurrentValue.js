@@ -14,7 +14,7 @@ function Value() {
   useEffect(() => {
     Axios.get(`${endpoint}`, {
       headers: {
-        "X-CMC_PRO_API_KEY": REACT_APP_API_KEY_CRYPTO,
+        "X-CMC_PRO_API_KEY": process.env.REACT_APP_API_KEY_CRYPTO,
         Accept: "application / json",
       },
       params: {
