@@ -9,7 +9,7 @@ function Value() {
   });
 
   const endpoint = `/v1/cryptocurrency/quotes/latest`;
-  const API_KEY = process.env.REACT_APP_API_KEY_CRYPTO;
+  const API_KEY = "34b01556-7946-4852-8b6a-06270dea216c";
 
   useEffect(() => {
     Axios.get(`${endpoint}`, {
