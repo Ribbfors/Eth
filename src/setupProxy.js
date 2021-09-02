@@ -5,7 +5,6 @@ module.exports = function (app) {
     createProxyMiddleware("/v1", {
       target: "https://pro-api.coinmarketcap.com",
       changeOrigin: true,
-      secure: false,
     })
   );
 };
